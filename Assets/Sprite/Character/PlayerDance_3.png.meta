@@ -1,10 +1,40 @@
 fileFormatVersion: 2
-guid: 5bbdc438876e91141b17d896433bb6d9
+guid: 724fabbf82c0b194c886a5792c0b29dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8680797543115379092
-    second: A_0
+      213: -8527525113286662511
+    second: PlayerDance_3_0
+  - first:
+      213: 1675494923308588059
+    second: PlayerDance_3_1
+  - first:
+      213: 257763399602095811
+    second: PlayerDance_3_2
+  - first:
+      213: 1770287203328444381
+    second: PlayerDance_3_3
+  - first:
+      213: 8046848536680188022
+    second: PlayerDance_3_4
+  - first:
+      213: -7497039818889019567
+    second: PlayerDance_3_5
+  - first:
+      213: -5523627338505379694
+    second: PlayerDance_3_6
+  - first:
+      213: -6291078340219589037
+    second: PlayerDance_3_7
+  - first:
+      213: -8279793088689868934
+    second: PlayerDance_3_8
+  - first:
+      213: -5810745026824192372
+    second: PlayerDance_3_9
+  - first:
+      213: 1997332238569990891
+    second: PlayerDance_3_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +156,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: A_0
+      name: PlayerDance_3_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 111
-        width: 194
-        height: 290
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +171,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6e268b90ac978780800000000000000
-      internalID: -8680797543115379092
+      spriteID: 1966359171528a980800000000000000
+      internalID: -8527525113286662511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDance_3_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c57ce61cd804710800000000000000
+      internalID: 1675494923308588059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDance_3_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6416d3272c39300800000000000000
+      internalID: 257763399602095811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDance_3_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7cfc005d2519810800000000000000
+      internalID: 1770287203328444381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDance_3_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678c13e2c162caf60800000000000000
+      internalID: 8046848536680188022
       vertices: []
       indices: 
       edges: []
@@ -151,7 +269,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4df85ad8ec13c349b6ab452e1f054b3
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +279,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      A_0: -8680797543115379092
+      PlayerDance_3_0: -8527525113286662511
+      PlayerDance_3_1: 1675494923308588059
+      PlayerDance_3_2: 257763399602095811
+      PlayerDance_3_3: 1770287203328444381
+      PlayerDance_3_4: 8046848536680188022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
