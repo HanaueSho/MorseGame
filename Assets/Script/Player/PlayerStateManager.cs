@@ -34,8 +34,7 @@ public class PlayerStateManager : MonoBehaviour
                 }
                 else
                 {
-                    _alphabetNode = _rootNode;
-                    MoveRootNode();
+                    MoveRootNode(); // ルートへ移動
                 }
             }
         }
@@ -52,8 +51,7 @@ public class PlayerStateManager : MonoBehaviour
                 }
                 else
                 {
-                    _alphabetNode = _rootNode;
-                    MoveRootNode();
+                    MoveRootNode(); // ルートへ移動
                 }
             }
         }
@@ -66,11 +64,29 @@ public class PlayerStateManager : MonoBehaviour
         transform.position = position;
     }
 
-    private void MoveRootNode()
+    public void MoveRootNode()
     {
+        // ルートノードへ移動
+        _alphabetNode = _rootNode;
+
         // 位置の更新
         Vector3 position = _rootNode.transform.position;
         transform.position = position;
     }
 
+
+    // 正解のノードへたどり着いたか判定
+    public bool IsGetAnswerNode()
+    {
+        if (!_alphabetNode._isAnswerNode)
+            return false;
+
+        // 色を戻してあげる
+        _alphabetNode.OffLight();
+
+        // ルートノードへ戻す
+        MoveRootNode();
+
+        return true;
+    }
 }

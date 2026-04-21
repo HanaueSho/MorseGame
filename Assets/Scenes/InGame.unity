@@ -361,6 +361,60 @@ MonoBehaviour:
   _myAlphabet: Q
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
+--- !u!1 &130068277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130068279}
+  - component: {fileID: 130068278}
+  m_Layer: 0
+  m_Name: QuestionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &130068278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130068277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252f1b35f827ac649b232bd27b6da3fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 1671901656}
+  _rootNode: {fileID: 362538107}
+  _questions:
+  - HELLOKIRBY
+  _nowQuestion: []
+  _nowArray: 
+  _nowIndex: 0
+--- !u!4 &130068279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130068277}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07161915, y: 0.18675908, z: -0.0403261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141883064
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,6 +796,9 @@ MonoBehaviour:
   _myAlphabet: O
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &193935542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,7 +1315,7 @@ GameObject:
   - component: {fileID: 362538106}
   - component: {fileID: 362538107}
   m_Layer: 0
-  m_Name: Node_Character
+  m_Name: Node_Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1349,6 +1406,9 @@ MonoBehaviour:
   _myAlphabet: 0
   _ditNode: {fileID: 1162048871}
   _dahNode: {fileID: 1008564814}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &421052185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1515,9 @@ MonoBehaviour:
   _myAlphabet: A
   _ditNode: {fileID: 1839378434}
   _dahNode: {fileID: 2003760744}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &444762316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,6 +1621,9 @@ MonoBehaviour:
   _myAlphabet: K
   _ditNode: {fileID: 577127106}
   _dahNode: {fileID: 1476426636}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &447053032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +1814,9 @@ MonoBehaviour:
   _myAlphabet: H
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &526971906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1920,9 @@ MonoBehaviour:
   _myAlphabet: D
   _ditNode: {fileID: 1030291083}
   _dahNode: {fileID: 2005531312}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &545332941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,6 +2252,9 @@ MonoBehaviour:
   _myAlphabet: C
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &580991420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2584,9 @@ MonoBehaviour:
   _myAlphabet: J
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &651491245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,6 +3507,9 @@ MonoBehaviour:
   _myAlphabet: T
   _ditNode: {fileID: 1116911485}
   _dahNode: {fileID: 1593716583}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1021109991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,6 +3752,9 @@ MonoBehaviour:
   _myAlphabet: B
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1033768947
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,6 +4136,9 @@ MonoBehaviour:
   _myAlphabet: F
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1116911482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4155,6 +4242,9 @@ MonoBehaviour:
   _myAlphabet: N
   _ditNode: {fileID: 526971909}
   _dahNode: {fileID: 444762319}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1140632980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4258,6 +4348,9 @@ MonoBehaviour:
   _myAlphabet: L
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1162048868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4363,6 +4456,9 @@ MonoBehaviour:
   _myAlphabet: E
   _ditNode: {fileID: 1341201368}
   _dahNode: {fileID: 421052188}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1196865460
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +4562,9 @@ MonoBehaviour:
   _myAlphabet: V
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1200336126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4569,6 +4668,9 @@ MonoBehaviour:
   _myAlphabet: U
   _ditNode: {fileID: 1068376486}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1200508642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,6 +5087,9 @@ MonoBehaviour:
   _myAlphabet: I
   _ditNode: {fileID: 1434952138}
   _dahNode: {fileID: 1200336129}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1343873409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5314,6 +5419,9 @@ MonoBehaviour:
   _myAlphabet: Z
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1370894587
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,6 +5989,9 @@ MonoBehaviour:
   _myAlphabet: S
   _ditNode: {fileID: 459946035}
   _dahNode: {fileID: 1196865463}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1442347970
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,6 +6182,9 @@ MonoBehaviour:
   _myAlphabet: Y
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1498550145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6837,6 +6951,9 @@ MonoBehaviour:
   _myAlphabet: M
   _ditNode: {fileID: 1667248658}
   _dahNode: {fileID: 167152296}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1600532430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6940,6 +7057,9 @@ MonoBehaviour:
   _myAlphabet: P
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1641184768
 GameObject:
   m_ObjectHideFlags: 0
@@ -7091,6 +7211,9 @@ MonoBehaviour:
   _myAlphabet: G
   _ditNode: {fileID: 1346566488}
   _dahNode: {fileID: 129808322}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1668206632
 GameObject:
   m_ObjectHideFlags: 0
@@ -7899,6 +8022,9 @@ MonoBehaviour:
   _myAlphabet: R
   _ditNode: {fileID: 1140632983}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &1861625547
 GameObject:
   m_ObjectHideFlags: 0
@@ -8319,6 +8445,9 @@ MonoBehaviour:
   _myAlphabet: W
   _ditNode: {fileID: 1600532433}
   _dahNode: {fileID: 633860671}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &2005531309
 GameObject:
   m_ObjectHideFlags: 0
@@ -8422,6 +8551,9 @@ MonoBehaviour:
   _myAlphabet: X
   _ditNode: {fileID: 0}
   _dahNode: {fileID: 0}
+  _ditEdge: {fileID: 0}
+  _dahEdge: {fileID: 0}
+  _isAnswerNode: 0
 --- !u!1 &2049446617
 GameObject:
   m_ObjectHideFlags: 0
@@ -8717,6 +8849,7 @@ SceneRoots:
   - {fileID: 2049446618}
   - {fileID: 1542974444}
   - {fileID: 1671901658}
+  - {fileID: 130068279}
   - {fileID: 1212522621}
   - {fileID: 1200508644}
   - {fileID: 828074591}
