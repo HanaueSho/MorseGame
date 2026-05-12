@@ -1,12 +1,15 @@
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerStateManager : MonoBehaviour
 {
     // ルートノード
+    [Header("ルートノード参照")]
     [SerializeField] private AlphabetStateManager _rootNode;
 
     // 現在のアルファベットノード
+    [Header("現在位置のアルファベットノード")]
     [SerializeField] private AlphabetStateManager _alphabetNode;
 
     // 入力系
@@ -84,9 +87,30 @@ public class PlayerStateManager : MonoBehaviour
         // 色を戻してあげる
         _alphabetNode.OffLight();
 
+        // エッジアニメーションのリセット
+        _alphabetNode.StopAnimationEdge();
+
+
         // ルートノードへ戻す
         MoveRootNode();
 
         return true;
+    }
+
+
+    // QuestionManager から呼ばれる
+    public void PrepareQuestionAlphabet(int[] array)
+    {
+        // １文字目のトンツーを呼ぶ
+        if (array[0] == 1) // トン
+        {
+            _rootNode.DitNode.Dit(array, 0);
+            _rootNode.DitEdge.SetRoute(true);
+        }
+        else if (array[0] == 2) // ツー
+        {
+            _rootNode.DahNode.Dah(array, 0);
+            _rootNode.DahEdge.SetRoute(true);
+        }
     }
 }

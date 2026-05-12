@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 112821931}
   - component: {fileID: 112821932}
+  - component: {fileID: 112821933}
   m_Layer: 0
   m_Name: Edge_WP
   m_TagString: Untagged
@@ -258,6 +259,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &112821933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112821930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &129808319
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +379,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1667248658}
+  _prevEdge: {fileID: 1498550148}
   _isAnswerNode: 0
 --- !u!1 &130068277
 GameObject:
@@ -425,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141883065}
   - component: {fileID: 141883066}
+  - component: {fileID: 141883067}
   m_Layer: 0
   m_Name: Edge_IU
   m_TagString: Untagged
@@ -493,8 +512,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.5, y: 0, z: 0}
   - {x: 0.5, y: 0, z: 0}
+  - {x: -0.5, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -554,6 +573,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &141883067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141883064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &158380696
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 158380697}
   - component: {fileID: 158380698}
+  - component: {fileID: 158380699}
   m_Layer: 0
   m_Name: Edge_WJ
   m_TagString: Untagged
@@ -632,8 +667,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.2, y: 0, z: 0}
   - {x: 0.2, y: 0, z: 0}
+  - {x: -0.2, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -693,6 +728,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &158380699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158380696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &167152293
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +848,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1593716583}
+  _prevEdge: {fileID: 677668859}
   _isAnswerNode: 0
 --- !u!1 &193935542
 GameObject:
@@ -896,6 +948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240164104}
   - component: {fileID: 240164105}
+  - component: {fileID: 240164106}
   m_Layer: 0
   m_Name: Edge_DB
   m_TagString: Untagged
@@ -1025,6 +1078,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &240164106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240164103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &284932396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284932397}
   - component: {fileID: 284932398}
+  - component: {fileID: 284932399}
   m_Layer: 0
   m_Name: Edge_IS
   m_TagString: Untagged
@@ -1164,6 +1233,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &284932399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284932396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &339330514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 339330515}
   - component: {fileID: 339330517}
+  - component: {fileID: 339330518}
   m_Layer: 0
   m_Name: Edge_Ton
   m_TagString: Untagged
@@ -1303,6 +1388,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &339330518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339330514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &362538104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,8 +1506,10 @@ MonoBehaviour:
   _myAlphabet: 0
   _ditNode: {fileID: 1162048871}
   _dahNode: {fileID: 1008564814}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 339330518}
+  _dahEdge: {fileID: 1370894591}
+  _prevNode: {fileID: 0}
+  _prevEdge: {fileID: 0}
   _isAnswerNode: 0
 --- !u!1 &421052185
 GameObject:
@@ -1515,8 +1617,10 @@ MonoBehaviour:
   _myAlphabet: A
   _ditNode: {fileID: 1839378434}
   _dahNode: {fileID: 2003760744}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 2072825735}
+  _dahEdge: {fileID: 918633606}
+  _prevNode: {fileID: 1162048871}
+  _prevEdge: {fileID: 826972812}
   _isAnswerNode: 0
 --- !u!1 &444762316
 GameObject:
@@ -1621,8 +1725,10 @@ MonoBehaviour:
   _myAlphabet: K
   _ditNode: {fileID: 577127106}
   _dahNode: {fileID: 1476426636}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 1260134683}
+  _dahEdge: {fileID: 1837512225}
+  _prevNode: {fileID: 1116911485}
+  _prevEdge: {fileID: 1696887954}
   _isAnswerNode: 0
 --- !u!1 &447053032
 GameObject:
@@ -1816,6 +1922,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1434952138}
+  _prevEdge: {fileID: 592624272}
   _isAnswerNode: 0
 --- !u!1 &526971906
 GameObject:
@@ -1920,8 +2028,10 @@ MonoBehaviour:
   _myAlphabet: D
   _ditNode: {fileID: 1030291083}
   _dahNode: {fileID: 2005531312}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 240164106}
+  _dahEdge: {fileID: 1541210891}
+  _prevNode: {fileID: 1116911485}
+  _prevEdge: {fileID: 545332944}
   _isAnswerNode: 0
 --- !u!1 &545332941
 GameObject:
@@ -1933,6 +2043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545332942}
   - component: {fileID: 545332943}
+  - component: {fileID: 545332944}
   m_Layer: 0
   m_Name: Edge_ND
   m_TagString: Untagged
@@ -2062,6 +2173,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &545332944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545332941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &549762056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2380,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 444762319}
+  _prevEdge: {fileID: 1260134683}
   _isAnswerNode: 0
 --- !u!1 &580991420
 GameObject:
@@ -2352,6 +2480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 592624270}
   - component: {fileID: 592624271}
+  - component: {fileID: 592624272}
   m_Layer: 0
   m_Name: Edge_SH
   m_TagString: Untagged
@@ -2481,6 +2610,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &592624272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592624269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &633860668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,6 +2730,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 2003760744}
+  _prevEdge: {fileID: 158380699}
   _isAnswerNode: 0
 --- !u!1 &651491245
 GameObject:
@@ -2684,6 +2830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677668857}
   - component: {fileID: 677668858}
+  - component: {fileID: 677668859}
   m_Layer: 0
   m_Name: Edge_MO
   m_TagString: Untagged
@@ -2813,6 +2960,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &677668859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677668856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &826972809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826972810}
   - component: {fileID: 826972811}
+  - component: {fileID: 826972812}
   m_Layer: 0
   m_Name: Edge_EA
   m_TagString: Untagged
@@ -2891,8 +3054,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.2, y: 0, z: 0}
   - {x: 0.2, y: 0, z: 0}
+  - {x: -0.2, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -2952,6 +3115,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &826972812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826972809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &828074589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,6 +3227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 833489233}
   - component: {fileID: 833489234}
+  - component: {fileID: 833489235}
   m_Layer: 0
   m_Name: Edge_EI
   m_TagString: Untagged
@@ -3178,6 +3357,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &833489235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833489232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &918633603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,6 +3382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918633604}
   - component: {fileID: 918633605}
+  - component: {fileID: 918633606}
   m_Layer: 0
   m_Name: Edge_AW
   m_TagString: Untagged
@@ -3256,8 +3451,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.2, y: 0, z: 0}
   - {x: 0.2, y: 0, z: 0}
+  - {x: -0.2, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -3317,6 +3512,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &918633606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918633603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &992086110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,8 +3717,10 @@ MonoBehaviour:
   _myAlphabet: T
   _ditNode: {fileID: 1116911485}
   _dahNode: {fileID: 1593716583}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 1668206635}
+  _dahEdge: {fileID: 1021109994}
+  _prevNode: {fileID: 362538107}
+  _prevEdge: {fileID: 1370894591}
   _isAnswerNode: 0
 --- !u!1 &1021109991
 GameObject:
@@ -3520,6 +3732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021109992}
   - component: {fileID: 1021109993}
+  - component: {fileID: 1021109994}
   m_Layer: 0
   m_Name: Edge_TM
   m_TagString: Untagged
@@ -3649,6 +3862,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1021109994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021109991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1030291080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,6 +3982,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 526971909}
+  _prevEdge: {fileID: 240164106}
   _isAnswerNode: 0
 --- !u!1 &1033768947
 GameObject:
@@ -3765,6 +3995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1033768948}
   - component: {fileID: 1033768949}
+  - component: {fileID: 1033768950}
   m_Layer: 0
   m_Name: Edge_MG
   m_TagString: Untagged
@@ -3894,6 +4125,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1033768950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033768947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1044686127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3904,6 +4150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044686128}
   - component: {fileID: 1044686129}
+  - component: {fileID: 1044686130}
   m_Layer: 0
   m_Name: Edge_UF
   m_TagString: Untagged
@@ -4033,6 +4280,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1044686130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044686127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1068376483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,6 +4400,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1200336129}
+  _prevEdge: {fileID: 1044686130}
   _isAnswerNode: 0
 --- !u!1 &1116911482
 GameObject:
@@ -4242,8 +4506,10 @@ MonoBehaviour:
   _myAlphabet: N
   _ditNode: {fileID: 526971909}
   _dahNode: {fileID: 444762319}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 545332944}
+  _dahEdge: {fileID: 1696887954}
+  _prevNode: {fileID: 1008564814}
+  _prevEdge: {fileID: 1668206635}
   _isAnswerNode: 0
 --- !u!1 &1140632980
 GameObject:
@@ -4350,6 +4616,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1839378434}
+  _prevEdge: {fileID: 2003064709}
   _isAnswerNode: 0
 --- !u!1 &1162048868
 GameObject:
@@ -4456,8 +4724,10 @@ MonoBehaviour:
   _myAlphabet: E
   _ditNode: {fileID: 1341201368}
   _dahNode: {fileID: 421052188}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 833489235}
+  _dahEdge: {fileID: 826972812}
+  _prevNode: {fileID: 362538107}
+  _prevEdge: {fileID: 339330518}
   _isAnswerNode: 0
 --- !u!1 &1196865460
 GameObject:
@@ -4564,6 +4834,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1434952138}
+  _prevEdge: {fileID: 1344163679}
   _isAnswerNode: 0
 --- !u!1 &1200336126
 GameObject:
@@ -4668,8 +4940,10 @@ MonoBehaviour:
   _myAlphabet: U
   _ditNode: {fileID: 1068376486}
   _dahNode: {fileID: 0}
-  _ditEdge: {fileID: 0}
+  _ditEdge: {fileID: 1044686130}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1341201368}
+  _prevEdge: {fileID: 141883067}
   _isAnswerNode: 0
 --- !u!1 &1200508642
 GameObject:
@@ -4855,6 +5129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260134681}
   - component: {fileID: 1260134682}
+  - component: {fileID: 1260134683}
   m_Layer: 0
   m_Name: Edge_KC
   m_TagString: Untagged
@@ -4984,6 +5259,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1260134683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260134680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1341201365
 GameObject:
   m_ObjectHideFlags: 0
@@ -5087,8 +5377,10 @@ MonoBehaviour:
   _myAlphabet: I
   _ditNode: {fileID: 1434952138}
   _dahNode: {fileID: 1200336129}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 284932399}
+  _dahEdge: {fileID: 141883067}
+  _prevNode: {fileID: 1162048871}
+  _prevEdge: {fileID: 833489235}
   _isAnswerNode: 0
 --- !u!1 &1343873409
 GameObject:
@@ -5187,6 +5479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344163677}
   - component: {fileID: 1344163678}
+  - component: {fileID: 1344163679}
   m_Layer: 0
   m_Name: Edge_SV
   m_TagString: Untagged
@@ -5255,8 +5548,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.2, y: 0, z: 0}
   - {x: 0.2, y: 0, z: 0}
+  - {x: -0.2, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -5316,6 +5609,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1344163679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344163676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1346566485
 GameObject:
   m_ObjectHideFlags: 0
@@ -5421,6 +5729,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 1667248658}
+  _prevEdge: {fileID: 1529471150}
   _isAnswerNode: 0
 --- !u!1 &1370894587
 GameObject:
@@ -5432,6 +5742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370894588}
   - component: {fileID: 1370894590}
+  - component: {fileID: 1370894591}
   m_Layer: 0
   m_Name: Edge_Tow
   m_TagString: Untagged
@@ -5561,6 +5872,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1370894591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370894587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1381944271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,8 +6315,10 @@ MonoBehaviour:
   _myAlphabet: S
   _ditNode: {fileID: 459946035}
   _dahNode: {fileID: 1196865463}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 592624272}
+  _dahEdge: {fileID: 1344163679}
+  _prevNode: {fileID: 1341201368}
+  _prevEdge: {fileID: 284932399}
   _isAnswerNode: 0
 --- !u!1 &1442347970
 GameObject:
@@ -6184,6 +6512,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 444762319}
+  _prevEdge: {fileID: 1837512225}
   _isAnswerNode: 0
 --- !u!1 &1498550145
 GameObject:
@@ -6195,6 +6525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498550146}
   - component: {fileID: 1498550147}
+  - component: {fileID: 1498550148}
   m_Layer: 0
   m_Name: Edge_GQ
   m_TagString: Untagged
@@ -6324,6 +6655,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1498550148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498550145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1529471147
 GameObject:
   m_ObjectHideFlags: 0
@@ -6334,6 +6680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529471148}
   - component: {fileID: 1529471149}
+  - component: {fileID: 1529471150}
   m_Layer: 0
   m_Name: Edge_GZ
   m_TagString: Untagged
@@ -6463,6 +6810,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1529471150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529471147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1532367209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6662,6 +7024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541210889}
   - component: {fileID: 1541210890}
+  - component: {fileID: 1541210891}
   m_Layer: 0
   m_Name: Edge_DX
   m_TagString: Untagged
@@ -6791,6 +7154,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1541210891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541210888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1542974443
 GameObject:
   m_ObjectHideFlags: 0
@@ -6951,8 +7329,10 @@ MonoBehaviour:
   _myAlphabet: M
   _ditNode: {fileID: 1667248658}
   _dahNode: {fileID: 167152296}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 1033768950}
+  _dahEdge: {fileID: 677668859}
+  _prevNode: {fileID: 1008564814}
+  _prevEdge: {fileID: 1021109994}
   _isAnswerNode: 0
 --- !u!1 &1600532430
 GameObject:
@@ -7059,6 +7439,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 2003760744}
+  _prevEdge: {fileID: 112821933}
   _isAnswerNode: 0
 --- !u!1 &1641184768
 GameObject:
@@ -7211,8 +7593,10 @@ MonoBehaviour:
   _myAlphabet: G
   _ditNode: {fileID: 1346566488}
   _dahNode: {fileID: 129808322}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 1529471150}
+  _dahEdge: {fileID: 1498550148}
+  _prevNode: {fileID: 1593716583}
+  _prevEdge: {fileID: 1033768950}
   _isAnswerNode: 0
 --- !u!1 &1668206632
 GameObject:
@@ -7224,6 +7608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668206633}
   - component: {fileID: 1668206634}
+  - component: {fileID: 1668206635}
   m_Layer: 0
   m_Name: Edge_TN
   m_TagString: Untagged
@@ -7353,6 +7738,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1668206635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1671901655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7568,6 +7968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696887952}
   - component: {fileID: 1696887953}
+  - component: {fileID: 1696887954}
   m_Layer: 0
   m_Name: Edge_NK
   m_TagString: Untagged
@@ -7697,6 +8098,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1696887954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696887951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1753351180
 GameObject:
   m_ObjectHideFlags: 0
@@ -7786,6 +8202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837512223}
   - component: {fileID: 1837512224}
+  - component: {fileID: 1837512225}
   m_Layer: 0
   m_Name: Edge_KY
   m_TagString: Untagged
@@ -7915,6 +8332,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1837512225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837512222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &1839378431
 GameObject:
   m_ObjectHideFlags: 0
@@ -8022,8 +8454,10 @@ MonoBehaviour:
   _myAlphabet: R
   _ditNode: {fileID: 1140632983}
   _dahNode: {fileID: 0}
-  _ditEdge: {fileID: 0}
+  _ditEdge: {fileID: 2003064709}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 421052188}
+  _prevEdge: {fileID: 2072825735}
   _isAnswerNode: 0
 --- !u!1 &1861625547
 GameObject:
@@ -8209,6 +8643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003064707}
   - component: {fileID: 2003064708}
+  - component: {fileID: 2003064709}
   m_Layer: 0
   m_Name: Edge_RL
   m_TagString: Untagged
@@ -8338,6 +8773,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &2003064709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003064706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &2003760741
 GameObject:
   m_ObjectHideFlags: 0
@@ -8445,8 +8895,10 @@ MonoBehaviour:
   _myAlphabet: W
   _ditNode: {fileID: 1600532433}
   _dahNode: {fileID: 633860671}
-  _ditEdge: {fileID: 0}
-  _dahEdge: {fileID: 0}
+  _ditEdge: {fileID: 112821933}
+  _dahEdge: {fileID: 158380699}
+  _prevNode: {fileID: 421052188}
+  _prevEdge: {fileID: 918633606}
   _isAnswerNode: 0
 --- !u!1 &2005531309
 GameObject:
@@ -8553,6 +9005,8 @@ MonoBehaviour:
   _dahNode: {fileID: 0}
   _ditEdge: {fileID: 0}
   _dahEdge: {fileID: 0}
+  _prevNode: {fileID: 526971909}
+  _prevEdge: {fileID: 1541210891}
   _isAnswerNode: 0
 --- !u!1 &2049446617
 GameObject:
@@ -8622,6 +9076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072825733}
   - component: {fileID: 2072825734}
+  - component: {fileID: 2072825735}
   m_Layer: 0
   m_Name: Edge_AR
   m_TagString: Untagged
@@ -8751,6 +9206,21 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &2072825735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072825732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124abf76cebee41a70cdc1d412cb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRoute: 0
+  _isFlow: 0
+  _flowSpeed: 2
 --- !u!1 &2078290570
 GameObject:
   m_ObjectHideFlags: 0

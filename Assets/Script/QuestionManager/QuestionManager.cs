@@ -3,13 +3,17 @@ using UnityEngine;
 
 public class QuestionManager : MonoBehaviour
 {
+    [Header("プレイヤー参照")]
     public PlayerStateManager _player;
-    public AlphabetStateManager _rootNode;
+    public AlphabetStateManager _rootNode; // これいらないかも
 
+    [Header("問題集")]
     public string[] _questions; // 問題集
 
+    [Header("現在出題中の問題")]
     public string[] _nowQuestion; // 現在の問題
 
+    [Header("出題中の問題のモールス記号")]
     [SerializeField]private int[] _nowArray; // 現在の文字
     [SerializeField]private int _nowIndex = 0; // 現在の文字のインデックス
 
@@ -28,7 +32,7 @@ public class QuestionManager : MonoBehaviour
         // 配列へ変換
         _nowArray = ConvertMorseToArray(_nowQuestion[0]);
         // 配列からアルファベットを光らせる
-        _rootNode.PrepareQuestionAlphabet(_nowArray);
+        _player.PrepareQuestionAlphabet(_nowArray);
     }
 
     // Update is called once per frame
@@ -43,7 +47,7 @@ public class QuestionManager : MonoBehaviour
             }
             Debug.Log("nowIndex: " + _nowIndex);
             _nowArray = ConvertMorseToArray(_nowQuestion[_nowIndex]);
-            _rootNode.PrepareQuestionAlphabet(_nowArray);
+            _player.PrepareQuestionAlphabet(_nowArray);
         }
     }
 

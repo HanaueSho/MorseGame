@@ -3,20 +3,37 @@ using UnityEngine;
 public class AlphabetStateManager : MonoBehaviour
 {
     // 自分のアルファベット
+    [Header("自身のアルファベット設定")]
     [SerializeField] private string _myAlphabet = "A";
     public string MyAlphabet => _myAlphabet;
 
     // 隣り合うアルファベットの参照
+    [Header("次のアルファベット参照")]
     [SerializeField] private AlphabetStateManager _ditNode; // トン
     [SerializeField] private AlphabetStateManager _dahNode; // ツー
     public AlphabetStateManager DitNode => _ditNode;
     public AlphabetStateManager DahNode => _dahNode;
 
     // 隣り合うアルファベットへのエッジの参照
-    [SerializeField] private AlphabetStateManager _ditEdge; // トン
-    [SerializeField] private AlphabetStateManager _dahEdge; // ツー
+    [Header("次のノードを繋ぐエッジ参照")]
+    [SerializeField] private EdgeStateManager _ditEdge; // トン
+    [SerializeField] private EdgeStateManager _dahEdge; // ツー
+    public EdgeStateManager DitEdge => _ditEdge;
+    public EdgeStateManager DahEdge => _dahEdge;
+
+    // ひとつ前のアルファベットの参照
+    [Header("前のアルファベット参照")]
+    [SerializeField] private AlphabetStateManager _prevNode; // トン
+    public AlphabetStateManager PrevNode => _prevNode;
+
+    // ひとつ前のアルファベットへのエッジの参照
+    [Header("前のノードを繋ぐエッジ参照")]
+    [SerializeField] private EdgeStateManager _prevEdge; // トン
+    public EdgeStateManager PrevEdge => _prevEdge;
+
 
     // 目的のノードかフラグ
+    [Header("自身がゴールのノードかのフラグ")]
     public bool _isAnswerNode = false;
 
 
@@ -48,19 +65,6 @@ public class AlphabetStateManager : MonoBehaviour
         
     }
 
-    // QuestionManager から呼ばれる
-    public void PrepareQuestionAlphabet(int[] array)
-    {
-        // １文字目のトンツーを呼ぶ
-        if (array[0] == 1) // トン
-        {
-            _ditNode.Dit(array, 0);
-        }
-        else if(array[0] == 2) // ツー
-        {
-            _dahNode.Dah(array, 0);
-        }
-    }
 
     // トン
     public void Dit(int[] array, int index)
@@ -69,10 +73,12 @@ public class AlphabetStateManager : MonoBehaviour
         if (array[index + 1] == 1) // トン
         {
             _ditNode.Dit(array, index + 1);
+            _ditEdge.SetRoute(true);
         }
         else if (array[index + 1] == 2) // ツー
         {
             _dahNode.Dah(array, index + 1);
+            _dahEdge.SetRoute(true);
         }
         else if (array[index + 1] == 0) // 終端文字≒自身が目的の文字
         {
@@ -87,10 +93,12 @@ public class AlphabetStateManager : MonoBehaviour
         if (array[index + 1] == 1) // トン
         {
             _ditNode.Dit(array, index + 1);
+            _ditEdge.SetRoute(true);
         }
         else if (array[index + 1] == 2) // ツー
         {
             _dahNode.Dah(array, index + 1);
+            _dahEdge.SetRoute(true);
         }
         else if (array[index + 1] == 0) // 終端文字≒自身が目的の文字
         {
@@ -121,4 +129,14 @@ public class AlphabetStateManager : MonoBehaviour
         // フラグ折る
         _isAnswerNode = false;
     }
+
+    // ノードのアニメーションを止める
+    public void StopAnimationEdge()
+    {
+        if (_prevEdge == null) return;
+
+        _prevEdge.ResetEdgeAnimation();
+        _prevNode.StopAnimationEdge(); // 再帰呼び出し
+    }
+
 }
