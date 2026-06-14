@@ -107,10 +107,16 @@ public class AlphabetStateManager : MonoBehaviour
         }
     }
 
+    // 自身が正解のルートか返す
+    public bool IsRightNode()
+    {
+        return _prevEdge.IsRoute();
+    }
+
     // 色を変える
     private void FlashLight()
     {
-        Debug.Log("kokodayo: " + _myAlphabet);
+        //Debug.Log("kokodayo: " + _myAlphabet);
 
         // 明るくする
         SpriteRenderer sr = GetComponent<SpriteRenderer>();

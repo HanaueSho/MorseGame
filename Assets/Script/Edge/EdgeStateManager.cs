@@ -58,4 +58,8 @@ public class EdgeStateManager : MonoBehaviour
         _material.mainTextureOffset = new Vector2(_offsetX, 0.0f);
     }
 
+    public bool IsRoute()
+    {
+        return _isRoute;
+    }
 }

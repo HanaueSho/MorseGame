@@ -17,6 +17,8 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]private int[] _nowArray; // 現在の文字
     [SerializeField]private int _nowIndex = 0; // 現在の文字のインデックス
 
+    [Header("アルファベットのスプライト配列")]
+    [SerializeField] private Sprite[] _alphabetSprites = new Sprite[26];
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

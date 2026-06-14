@@ -28,40 +28,53 @@ public class PlayerStateManager : MonoBehaviour
         if (Keyboard.current.pKey.wasPressedThisFrame || _touchInput.OnTapReleased())
         {
             // Dit
-            if (_alphabetNode != null)
-            {
-                if(_alphabetNode.DitNode != null)
-                {
-                    _alphabetNode = _alphabetNode.DitNode;
-                    MoveNode(); // ノードへ移動
-                }
-                else
-                {
-                    MoveRootNode(); // ルートへ移動
-                }
-            }
+            RequestMoveNode(0);
         }
         // フリック（ツー）
         if (Keyboard.current.oKey.wasPressedThisFrame || _touchInput.OnFlickReleased())
         {
             // Dah
-            if (_alphabetNode != null)
-            {
-                if (_alphabetNode.DahNode != null)
-                {
-                    _alphabetNode = _alphabetNode.DahNode;
-                    MoveNode(); // ノードへ移動
-                }
-                else
-                {
-                    MoveRootNode(); // ルートへ移動
-                }
-            }
+            RequestMoveNode(1);
         }
     }
 
-    private void MoveNode()
+    // 移動のリクエスト
+    private void RequestMoveNode(int ditdah)
     {
+        if (_alphabetNode == null) return;
+
+        if (ditdah == 0) // タップ（トン）
+        {
+            if (_alphabetNode.DitNode != null)
+            {
+                if (_alphabetNode.DitNode.IsRightNode())
+                {
+                    MoveNode(_alphabetNode.DitNode); // ノードへ移動
+                    return;
+                }
+            }
+        }
+        else if (ditdah == 1) // フリック（ツー）
+        {
+            if (_alphabetNode.DahNode != null)
+            {
+                if (_alphabetNode.DahNode.IsRightNode())
+                {
+                    MoveNode(_alphabetNode.DahNode); // ノードへ移動
+                    return;
+                }
+            }
+        }
+
+
+        MoveRootNode(); // ルートへ移動
+    }
+
+    private void MoveNode(AlphabetStateManager alphabetNode)
+    {
+        // ノード更新
+        _alphabetNode = alphabetNode;
+
         // 位置の更新
         Vector3 position = _alphabetNode.transform.position;
         transform.position = position;
